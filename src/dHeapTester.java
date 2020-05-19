@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 
 import static org.junit.Assert.*;
 
-public class dHeapTest {
+public class dHeapTester {
 
     dHeap<Integer> maxHeap1;
     dHeap<Integer> maxHeap2;
@@ -14,8 +14,8 @@ public class dHeapTest {
     @org.junit.Before
     public void setUp() {
         maxHeap1 = new dHeap<>();
-        /*maxHeap2 = new dHeap<>(3, 10, true);
-        maxHeap3 = new dHeap<Integer>(4, 20, true);*/
+        maxHeap2 = new dHeap<>(3, 10, true);
+        maxHeap3 = new dHeap<Integer>(4, 20, true);
 
         maxHeap1.add(9);
         maxHeap1.add(5);
@@ -69,7 +69,7 @@ public class dHeapTest {
         assertTrue(maxHeap3.element()==29);
     }
 
-    /*@org.junit.Test
+    @org.junit.Test
     public void testRemove() {
         assertTrue(maxHeap1.remove()==9);
         assertTrue(maxHeap1.element()==5);
@@ -82,7 +82,7 @@ public class dHeapTest {
         assertTrue(maxHeap3.remove()==29);
         assertTrue(maxHeap3.element()==27);
         assertTrue(maxHeap3.size()==13);
-    }*/
+    }
 
     @org.junit.Test
     public void testClear() {
